@@ -1,0 +1,39 @@
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+[Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed: 135.4min
+[Parallel(n_jobs=-1)]: Done  60 out of  60 | elapsed: 225.4min finished
+
+
+
+Best: -0.219533 using {'n_estimators': 600, 'max_depth': 6}
+
+-0.228029 (0.001542) with: {'n_estimators': 200, 'max_depth': 4}
+-0.222561 (0.001834) with: {'n_estimators': 400, 'max_depth': 4}
+-0.220696 (0.001852) with: {'n_estimators': 600, 'max_depth': 4}
+-0.220019 (0.001757) with: {'n_estimators': 800, 'max_depth': 4}
+-0.221804 (0.001569) with: {'n_estimators': 200, 'max_depth': 6}
+-0.219559 (0.001603) with: {'n_estimators': 400, 'max_depth': 6}
+-0.219533 (0.001780) with: {'n_estimators': 600, 'max_depth': 6}
+-0.219995 (0.001858) with: {'n_estimators': 800, 'max_depth': 6}
+-0.220026 (0.001590) with: {'n_estimators': 200, 'max_depth': 8}
+-0.219990 (0.001633) with: {'n_estimators': 400, 'max_depth': 8}
+-0.221708 (0.001842) with: {'n_estimators': 600, 'max_depth': 8}
+-0.224125 (0.002112) with: {'n_estimators': 800, 'max_depth': 8}
+
+
+model = xgb.XGBClassifier(max_depth=6, n_estimators=600, learning_rate=0.05).fit(X_train, Y_train)
+
+
+0.900627 (0.002066) with: {'n_estimators': 200, 'max_depth': 4}
+0.906152 (0.001660) with: {'n_estimators': 400, 'max_depth': 4}
+0.908046 (0.001693) with: {'n_estimators': 600, 'max_depth': 4}
+0.909049 (0.001499) with: {'n_estimators': 800, 'max_depth': 4}
+0.906643 (0.001622) with: {'n_estimators': 200, 'max_depth': 6}
+0.909138 (0.001620) with: {'n_estimators': 400, 'max_depth': 6}
+0.909365 (0.001455) with: {'n_estimators': 600, 'max_depth': 6}
+0.908888 (0.001647) with: {'n_estimators': 800, 'max_depth': 6}
+0.908482 (0.001686) with: {'n_estimators': 200, 'max_depth': 8}
+0.908994 (0.001717) with: {'n_estimators': 400, 'max_depth': 8}
+0.908198 (0.001718) with: {'n_estimators': 600, 'max_depth': 8}
+0.907259 (0.001875) with: {'n_estimators': 800, 'max_depth': 8}
+
+
